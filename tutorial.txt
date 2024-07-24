@@ -1,0 +1,7 @@
+go mod init gintutorial
+go get -u github.com/gin-gonic/gin
+go get "github.com/tpkeeper/gin-dump"
+
+build heroku
+curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+go build -o bin/golang-gin-poc
